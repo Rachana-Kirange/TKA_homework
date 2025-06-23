@@ -30,5 +30,13 @@ emp.display()
 
 '''
 OUTPUT :-
-
+Enter Your Name :- Rachana Kirange
+Enter Your Salary :- 50000
+Enter Your Mobile Number :- 7635489298
+Enter Your Email :- rmkirange28gmail.com             
+****------------Displaying Information of an employee------------****
+The name of an employee :->  Rachana Kirange
+The Salary of an employee :->  50000
+The Mobile number of an employee :-> 7635489298
+The Email of an employee :->  rmkirange28gmail.com
 '''
