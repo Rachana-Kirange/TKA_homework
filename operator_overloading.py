@@ -76,38 +76,81 @@ class book:
         return int(self.price) >> int(other.price)
 b = book("The Secret", 200)
 b1 = book("core python",100)
-print(b + b1)
-print(b * b1)
-print(b / b1)
-print(b - b1)
-print(b // b1)
-print(b % b1)
-print(b ** b1)   
-print(b == b1)
-print(b != b1)
-print(b < b1)
-print(b <= b1)
-print(b > b1)
-print(b >= b1)
-b += b1
-print(b.price)
-b -= b1
-print(b.price)
-b *= b1
-print(b.price)
-b /= b1
-print(b.price)
-b //= b1
-print(b.price)
-b %= b1
-print(b.price)
-b **= b1
-print(b.price)
+print(b + b1)   #300
+print(b * b1)   #20000
+print(b / b1)   #2.0
+print(b - b1)   #100
+print(b // b1)    #2
+print(b % b1)   #0
+print(b ** b1)    #126765060022822940149670320537600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+print(b == b1)    #False
+print(b != b1)    #True
+print(b < b1)     #False
+print(b <= b1)    #False
+print(b > b1)     #True
+print(b >= b1)    #True
+b += b1           #__iadd__
+print(b.price)    #300
+b -= b1           #__isub__
+print(b.price)    #200
+b *= b1           #__imul__
+print(b.price)    #20000
+b /= b1           #__itruediv__
+print(b.price)    #200.0
+b //= b1          #__ifloordiv__
+print(b.price)    #2.0
+b %= b1           #__imod__
+print(b.price)    #2.0
+b **= b1          #__ipow__
+print(b.price)    #1.2676506002282294e+30
 c = book("ABC", 10)
 d = book("PQR",2)
-print(c & d)
-print(c | d)
-print(c ^ d)
-print(c)
-print(c << d)
-print(c >> d)
+print(c & d)      #2
+print(c | d)      #10
+print(c ^ d)      #8
+print(c)          #
+print(c << d)     #40
+print(c >> d)     #2
+
+
+'''
+OUTPUT :->
+300
+20000
+2.0
+100
+2
+0
+126765060022822940149670320537600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+False
+True
+False
+False
+True
+True
+__iadd__
+300
+__isub__
+200
+__imul__
+20000
+__itruediv__
+200.0
+__ifloordiv__
+2.0
+__imod__
+2.0
+__ipow__
+1.2676506002282294e+30
+__and__
+2
+__or__
+10
+__xor__
+8
+<__main__.book object at 0x10b37d1d0>
+__lshift__
+40
+__rshift__
+2
+'''
