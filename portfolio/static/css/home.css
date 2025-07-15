@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.image-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px white(0, 0, 0, 0.4);
+    text-align: center;
+    width: 300px;
+}
+
+
+.image-box h1 {
+    font-size: 18px;
+    color: wheat;
+    margin-bottom: 15px;
+}
+.image-box h3 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.image-box img {
+    width: 200px;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+#h11{
+    text-align: center;
+    color: red;
+}
+.resume-link {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.resume-link a {
+    color: #00ccff;
+    text-decoration: underline;
+}

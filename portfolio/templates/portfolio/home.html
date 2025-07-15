@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+
+    <div class="image-box">
+           <marquee ><h1 id="h11"> Welcome to Resume Home Page </h1></marquee> 
+        <h1>RACHANA KIRANGE</h1>
+        <img src="{% static 'images/passport_photo.jpg' %}" alt="My Photo">
+        <h3> PYTHON DEVELOPER </h3>
+        <p>For whole Resume <a href="{% url 'Resume' %}">click here</a></p>
+</body>
+</html>
